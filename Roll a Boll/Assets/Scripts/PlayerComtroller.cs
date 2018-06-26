@@ -33,7 +33,7 @@ public class PlayerComtroller : MonoBehaviour {
     }
     void SetCount() {
         CountText.text = "Count: " + count.ToString();
-        if(count >= 13) {
+        if(count >= 12) {
             WinText.text = "YOU WIN!";
         }
     }
