@@ -7,8 +7,11 @@ public class PlayerComtroller : MonoBehaviour {
 
     public float speed = 6f;
     public Rigidbody rb;
-    public Text CountText, WinText;
+    public Text CountText;
     private int count;
+    public GameObject completeLevelUI;
+    public STime time;
+    int Life = 100;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -32,9 +35,19 @@ public class PlayerComtroller : MonoBehaviour {
         }
     }
     void SetCount() {
-        CountText.text = "Count: " + count.ToString();
         if(count >= 12) {
-            WinText.text = "YOU WIN!";
+            completeLevelUI.SetActive(true);
         }
+    }
+
+    void onCollisionEnter(Collider shift) {
+        if (shift.tag == "pipka") {
+            Life--;
+        }
+    }
+
+    void OnGUI() {
+        GUI.Box(new Rect(0, 0, 100, 30), "Life = " + Life);
+        GUI.Box(new Rect(105, 0, 120, 30), "Time = " + time.timer);
     }
 }

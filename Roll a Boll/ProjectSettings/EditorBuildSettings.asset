@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Menu.unity
     guid: 13ee6c49b635bf64287f62b1495649bd
   - enabled: 1
-    path: Assets/Game.unity
+    path: Assets/Level01.unity
     guid: 26b09e92192beb84b975b35e16fd4301
+  - enabled: 1
+    path: Assets/Level02.unity
+    guid: 3341cf024e8bf4c47b0bab8e04baae60
+  - enabled: 1
+    path: Assets/Level03.unity
+    guid: 25c875c77ed45574e908d191baa5af40
+  - enabled: 1
+    path: Assets/Credits.unity
+    guid: 78f9bdcdeeb90054592322f0ad760ad9
   m_configObjects: {}

@@ -4,15 +4,12 @@ using UnityEngine.UI;
 
 public class STime : MonoBehaviour {
 
-    public Text timeText;
-    float timer;
-	
-	void Update () {
-		if(timer > 0) {
+    public float timer = 5;
+
+    void Update() {
+        if (timer > 0)
+        {
             timer -= Time.deltaTime;
         }
-        if (timer < 0) {
-            Debug.Log("Lose!");
-        }
-	}
+    }
 }
