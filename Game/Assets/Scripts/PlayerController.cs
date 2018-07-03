@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public Rigidbody rigidbody;
+    public Rigidbody RB;
     public float Speed;
 
 	// Use this for initialization
 	void Start () {
-        rigidbody = GetComponent<Rigidbody>();
+		RB = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +18,6 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rigidbody.AddForce(movement * Speed);
+		RB.AddForce(movement * Speed);
 	}
 }
