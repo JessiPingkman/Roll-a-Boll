@@ -52,8 +52,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Credits.cs" />
+     <Compile Include="Assets\Scripts\Example.cs" />
      <Compile Include="Assets\Scripts\Manu.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerController1.cs" />
      <None Include="Assets\Google Fonts\LICENSE.txt" />
@@ -297,14 +299,14 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{1F92D569-C0AA-14A4-9C04-C2E6C46B74A3}</Project>      <Name>NavMeshComponentsExamples</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{58351A3C-B3DE-59DA-95CB-03DDCB7C4266}</Project>      <Name>NavMeshComponentsExamplesEditor</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{66798DCE-177E-05B6-43DE-1996C8567D30}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{55B0AF83-8C21-1810-02A4-41A75B7676AE}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
-    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{58351A3C-B3DE-59DA-95CB-03DDCB7C4266}</Project>      <Name>NavMeshComponentsExamplesEditor</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{1F92D569-C0AA-14A4-9C04-C2E6C46B74A3}</Project>      <Name>NavMeshComponentsExamples</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

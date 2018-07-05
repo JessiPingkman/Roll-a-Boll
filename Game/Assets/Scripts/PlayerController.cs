@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -19,5 +20,11 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 		RB.AddForce(movement * Speed);
+	}
+
+	void IsCollision(Collider other){
+		if (other.tag == "Enemy") {
+			SceneManager.LoadScene ("Miltiplayer");
+		}
 	}
 }
