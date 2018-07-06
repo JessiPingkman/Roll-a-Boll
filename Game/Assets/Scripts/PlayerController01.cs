@@ -6,6 +6,8 @@ public class PlayerController01 : MonoBehaviour {
 	public Camera cam;
 	public NavMeshAgent agent;
 	public Rigidbody RB;
+	int count;
+	public GameObject winUi;
 
 	void Start(){
 		RB = GetComponent<Rigidbody> ();
@@ -25,6 +27,18 @@ public class PlayerController01 : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Cube") {
 			Destroy (other.gameObject);
+			count++;
+			SetCount ();
 		}
+	}
+
+	void SetCount(){
+		if (count >= 5) {
+			winUi.SetActive (true);
+		}
+	}
+
+	void OnGUI(){
+		GUI.Box(new Rect (1266, 0, 100, 30), "Count = " + count);
 	}
 }

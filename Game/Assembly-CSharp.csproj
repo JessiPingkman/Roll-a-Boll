@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerController01.cs" />
+     <Compile Include="Assets\Scripts\Rotate.cs" />
      <None Include="Assets\Google Fonts\LICENSE.txt" />
      <None Include="Assets\NavMashComponents\ProjectSettings\ProjectVersion.txt" />
  <Reference Include="UnityEditor.StandardEvents">
