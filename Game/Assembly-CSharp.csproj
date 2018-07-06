@@ -57,7 +57,7 @@
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\PlayerController1.cs" />
+     <Compile Include="Assets\Scripts\PlayerController01.cs" />
      <None Include="Assets\Google Fonts\LICENSE.txt" />
      <None Include="Assets\NavMashComponents\ProjectSettings\ProjectVersion.txt" />
  <Reference Include="UnityEditor.StandardEvents">

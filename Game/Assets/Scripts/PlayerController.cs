@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour {
 		RB.AddForce(movement * Speed);
 	}
 
-	void IsCollision(Collider other){
-		if (other.tag == "Enemy") {
-			SceneManager.LoadScene ("Miltiplayer");
+	void OnTriggerEnter(Collider other){
+		if (other.tag == "Cube") {
+			Destroy (other.gameObject);
 		}
 	}
 }
