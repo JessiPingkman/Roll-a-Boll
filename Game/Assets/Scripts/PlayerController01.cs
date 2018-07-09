@@ -8,6 +8,8 @@ public class PlayerController01 : MonoBehaviour {
 	public Rigidbody RB;
 	int count;
 	public GameObject winUi;
+    public GameObject overUI;
+    int Life = 100;
 
 	void Start(){
 		RB = GetComponent<Rigidbody> ();
@@ -28,17 +30,27 @@ public class PlayerController01 : MonoBehaviour {
 		if (other.tag == "Cube") {
 			Destroy (other.gameObject);
 			count++;
-			SetCount ();
+            SetCount();
 		}
+        if (other.tag == "Enemy")
+        {
+            Life -= 20;
+            SetCount();
+        }
 	}
 
 	void SetCount(){
 		if (count >= 5) {
 			winUi.SetActive (true);
 		}
+        if(Life <= 0)
+        {
+            overUI.SetActive(true);
+        }
 	}
 
 	void OnGUI(){
 		GUI.Box(new Rect (1266, 0, 100, 30), "Count = " + count);
+        GUI.Box(new Rect(1240, 0, 100, 30), "Life = " + Life);
 	}
 }

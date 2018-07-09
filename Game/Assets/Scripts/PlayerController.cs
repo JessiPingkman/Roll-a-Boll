@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     public float Speed;
 	int count;
 	public GameObject winUi;
+    public int Life = 100;
 
 	// Use this for initialization
 	void Start () {
@@ -20,15 +21,19 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-		RB.AddForce(movement * Speed);
+        RB.AddForce(movement * Speed);
 	}
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Cube") {
 			Destroy (other.gameObject);
 			count++;
-			SetCount ();
-		}
+            SetCount();
+        }
+        if (other.tag == "Enemy")
+        {
+            Life -= 20;
+        }
 	}
 
 	void SetCount(){
@@ -39,5 +44,6 @@ public class PlayerController : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.Box(new Rect(0, 0, 100, 30), "Count = " + count);
+        GUI.Box(new Rect(30, 0, 100, 30), "Life = " + Life);
 	}
 }
