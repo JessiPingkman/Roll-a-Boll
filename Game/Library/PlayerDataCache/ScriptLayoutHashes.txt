@@ -1,6 +1,6 @@
-WindowsStandalone
+Android
 PlayerPath?
-E:/GameDevProject/Game/TextMyGame/TextMyGame.exe
+E:/GameDevProject/Game/TextMyGame/TestAPK/test.apk
 SceneListBegin?
 Assets/Scenes/Manu.unity
 Assets/Scenes/Multiplayer.unity
@@ -87,7 +87,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 31338e66dc45afdf7be2abcf008bc9dc NavMeshComponentsExamples.dll:.DestroyOnTrigger
-653cdc5b673db12e736826a2df3272a5 Assembly-CSharp.dll:.PlayerController
+14ac2de9e82cb99c62ef98bfa213304e Assembly-CSharp.dll:.PlayerController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -130,6 +130,7 @@ d78da10fc6fe2ebb0bfa7bfae15012c5 NavMeshComponents.dll:UnityEngine.AI.NavMeshMod
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.PlayerCamera
 26c1a6681b89f11e7c1c0bdd6f4cb840 NavMeshComponentsExamples.dll:.DungeonManager
 05524b8f659e7bfe5756d1335fec24ba NavMeshComponentsExamples.dll:.NavMeshSourceTag
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Rotate
 0ea7e3a1b65cd933d7a007e6774c4eaa Assembly-CSharp.dll:.Example
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -168,8 +169,14 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 1be52fb541d1fe19688de133e6306e00 NavMeshComponents.dll:UnityEngine.AI.NavMeshSurface
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 6533ccfabcfcaba4e475c97c38bb7c9e NavMeshComponentsExamples.dll:.NavMeshPrefabInstance
-4337e94d72225950dfa47639fc00a75f Assembly-CSharp.dll:.PlayerController01
+80153276ac26b02f438ccc63fb15d14f Assembly-CSharp.dll:.PlayerController01
 e93194319d6ff7643d3c30b3a36b4916 NavMeshComponentsExamples.dll:.RandomWalk
 758d73a81bde24abf5012b2314dde098 NavMeshComponentsExamples.dll:.SpawnPrefabOnKeyDown
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Credits
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Rotate
+78ebae5ed9b3edeb216da437b99754a4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.Joystick
+a8796ecdc9d5c260bbe32f30c4b10708 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
+8e9f5b922979e9356a11d2ee2b32ee60 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
+a2efb0db652b8114d1ae7dd9a600d626 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar
+a7d3c6c6948d99dd4116e659ddcf5ac4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.ButtonHandler
+fe76270bd84ec3b6f2f6f92c69cf69da Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.AxisTouchButton

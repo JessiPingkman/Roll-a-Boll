@@ -1,24 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 
 
 public class PlayerController : MonoBehaviour {
 
     public Rigidbody RB;
     public float Speed;
-	int count;
 	public GameObject winUi;
-    public int Life = 100;
+    public GameObject overUI;
+    int Life = 100;
+    int count;
+    public Text playerLife;
+    public Text playerCount;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		RB = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = CrossPlatformInputManager.GetAxis("Horizontal");
+        float moveVertical = CrossPlatformInputManager.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         RB.AddForce(movement * Speed);
@@ -40,10 +44,13 @@ public class PlayerController : MonoBehaviour {
 		if (count >= 5) {
 			winUi.SetActive (true);
 		}
-	}
 
-	void OnGUI(){
-		GUI.Box(new Rect(0, 0, 100, 30), "Count = " + count);
-        GUI.Box(new Rect(30, 0, 100, 30), "Life = " + Life);
+        if (Life <= 0)
+        {
+            overUI.SetActive(true);
+        }
+
+        playerCount.text = "Count = " + count.ToString();
+        playerLife.text = "Life " + Life.ToString();
 	}
 }
