@@ -29,7 +29,12 @@ public class PlayerController01 : MonoBehaviour {
 				agent.SetDestination (hit.point);
 			}
 		}
-	}
+
+        SetCount();
+
+        playerCount.text = "Count = " + count.ToString();
+        playerLife.text = "Life " + Life.ToString();
+    }
 
 	void OnTriggerEnter(Collider other)
     {
@@ -40,7 +45,7 @@ public class PlayerController01 : MonoBehaviour {
 		}
         if (other.tag == "Enemy")
         {
-            Life -= 20;
+            Life--;
             SetCount();
         }
 	}
@@ -55,8 +60,5 @@ public class PlayerController01 : MonoBehaviour {
         {
             overUI.SetActive(true);
         }
-
-        playerCount.text = "Count = " + count.ToString();
-        playerLife.text = "Life " + Life.ToString();
     }
 }

@@ -26,7 +26,12 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         RB.AddForce(movement * Speed);
-	}
+
+        SetCount();
+
+        playerCount.text = "Count = " + count.ToString();
+        playerLife.text = "Life " + Life.ToString();
+    }
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Cube") {
@@ -36,7 +41,7 @@ public class PlayerController : MonoBehaviour {
         }
         if (other.tag == "Enemy")
         {
-            Life -= 20;
+            Life-=20;
         }
 	}
 
@@ -49,8 +54,5 @@ public class PlayerController : MonoBehaviour {
         {
             overUI.SetActive(true);
         }
-
-        playerCount.text = "Count = " + count.ToString();
-        playerLife.text = "Life " + Life.ToString();
 	}
 }

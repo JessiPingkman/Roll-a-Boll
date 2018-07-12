@@ -6,4 +6,10 @@ public class Credits : MonoBehaviour {
 		Debug.Log ("QUIT!");
 		Application.Quit ();
 	}
+
+    public void Restart()
+    {
+        Debug.Log("RESTART!");
+        Application.LoadLevel(Application.loadedLevel);
+    }
 }
