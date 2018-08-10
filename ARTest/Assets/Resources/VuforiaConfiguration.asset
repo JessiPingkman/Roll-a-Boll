@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: ARz183L/////AAABGaVNpAdElUcNvIk5upHGxIAPWS8exXbHzuKnGdCB7fi5o0orKnBnYX1oujoTHac5WNnakziQ+oNmNdawP10ktumkzlte89YU740Y/fEMKw/Rb8PnIC8wOrdrywyHKnLiclFz/JXG01jvvKFHvVWqjMLhvJjX7ohZBzz1R/ocn6Oe0R0HDOXPSc1WIBCuvYaw9dFq3MKAcyBOZjZ0gemOi0Qyj9wZc/j31GEsVtu4v+XdVqmWsGV0A+1QB3NH1xViDPFV5R3R2b4hXLDHVCorwCVb+QzLroYrkyZRPw4o1xUADmKt7G4EGHkovh9nt9a9K3pe46knjFORvDy2AMMmsJDUOFMq+F+D59v2GYG6WCbG
-    ufoLicenseKey: QVdZQ1BiMy8vLy8vQUFBQUtEUVROOXFMV2s3VHVLN1E5M2RTSVNkN25TaUJ0djhtcUVVa0RkS0lHY2tkQzlITlBkTHRzZFg0Yld6cGxBR3ZZWkloR1VXNk1VL0VNV24zbmppc1RXdVdrVGllWnZMSjZQLzRqZ2VieGpQb3I2ZStUWGFuQTRIaXJla0l5Mmp5OXc4amxNd2NDOFVKeURpemI5VnNxV3RhMGdoaTdoelFHMFBUSTNTNk1KdUpYVzlDUitGSFQvamdCeG5NZkF6d3hCb0NkRWVVdGxsMXV6aTI3MEU0bjliSkNBRldNSTRoYlJFMVhESjhRaGVQaW82NnowcElMa1dndDdqOXdpekhnL2NFRE9GVUlULytCMUtDblJwOGIra3o3d0pqVzVqaTJzMW41UWxKUGxJVHF4ZVFOSlZLQXJPRjUwd0FIUE5yczRPOWJLemxkajBpdGttS0VwM0N3M0JTd29kcUNiMVR5YTlaWVNMbzlBWk4=
+    ufoLicenseKey: QVpCdyt6ci8vLy8vQUFBQUtHYy9XL2RpVEVwZ3R0WUtOaFd1SiswWXlmK0N6czA1QTgveHRldC9kZDlaRi9IMXh5TEZqVGd6N3VXTGY3YURyV0xBVU1RTmRiYlNJbG82OVcwemIwR0dhaHo2Z0FMRVB5dU1KOTdqM0IrQjFweUZ5WWcwdFhPamsxbHdVaC8vOWZpQlNkeVgwNzZwUmUwUmw5YVJucjJmekYxbW9HR1l5aDk2VHM4WWljRk90YUY5WGFsYllDL0NTa2V6KzlFelFkVjNJd2xUUURKZERYWk5jQm0ya1FoODExU1BhNUcxM2s5TWxBcnUrVThoSmdkNWtvZHZSSFZmckIyZk5Ga3RNajluRkZiVURkVFdlOWpDWXBJc0Jna3grZWkrMlZpdkxjdGlaMWZtWk12c2x0TTVja0I3R0hIbWZmK25JaE9KOEdGYUhTSlZUa25reGdxam5hVlRmM091UXVCZDFxYW1FTkErR0VYWHo5czc=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -21,6 +21,7 @@ MonoBehaviour:
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
+    version: 7.2.24
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -42,15 +43,6 @@ MonoBehaviour:
       DistortionCoefficients: {x: 0, y: 0}
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
-  databaseLoad:
-    dataSetsToLoad:
-    - Denomimation
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
-    dataSetsToActivate:
-    - Denomimation
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -66,11 +58,12 @@ MonoBehaviour:
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
+    fusionMode: 7
   smartTerrain:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: 
     flipHorizontally: 0
-    turnOffWebCam: 0
+    turnOffWebCam: 1
     renderTextureLayer: 30
